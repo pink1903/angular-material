@@ -1,0 +1,27 @@
+:host::ng-deep {
+  .mat-slide-toggle.mat-disabled {
+    opacity: 90%;
+  }
+}
+:host::ng-deep .mat-slide-toggle.green.mat-checked .mat-slide-toggle-bar {
+    background-color: #0CA388;
+}
+
+:host::ng-deep .mat-slide-toggle.green.mat-checked .mat-slide-toggle-thumb {
+    background-color: #0CA388;
+}
+:host::ng-deep .mat-slide-toggle.yellow.mat-checked .mat-slide-toggle-bar {
+    background-color: #FFD175;
+}
+
+:host::ng-deep .mat-slide-toggle.yellow.mat-checked .mat-slide-toggle-thumb {
+    background-color: #FFD175;
+}
+
+:host::ng-deep .mat-slide-toggle.disable.mat-checked .mat-slide-toggle-bar {
+    background-color: gray;
+}
+
+:host::ng-deep .mat-slide-toggle.disable.mat-checked .mat-slide-toggle-thumb {
+    background-color: gray;
+}
