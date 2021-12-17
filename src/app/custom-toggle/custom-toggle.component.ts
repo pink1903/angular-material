@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
-import {STATE} from '../app.component';
-
+import {ThemePalette} from '@angular/material/core';
+import {ThemePaletteCustom} from '../app.component';
 @Component({
   selector: 'app-custom-toggle',
   templateUrl: './custom-toggle.component.html',
@@ -12,7 +12,7 @@ export class CustomToggleComponent implements OnInit {
 
   @Input() checked = true;
   @Input() disabled = true;
-  @Input() state: STATE | undefined;
+  @Input()color: ThemePalette | ThemePaletteCustom;
   ngOnInit(): void {
   }
 

@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
-export enum STATE  {
-  success = 'green',
-  pending = 'yellow',
-  disabled = 'gray'
-}
+import {ThemePalette} from '@angular/material/core';
+export declare type ThemePaletteCustom = 'success' | 'pending' | 'disabled' | undefined;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +8,7 @@ export enum STATE  {
 })
 export class AppComponent {
   title = 'angular';
-  readonly success: STATE = STATE.success;
-  readonly pending: STATE = STATE.pending;
-  readonly disabled: STATE = STATE.disabled;
+  readonly success: ThemePalette | ThemePaletteCustom = 'success';
+  readonly pending: ThemePalette | ThemePaletteCustom = 'pending';
+  readonly disabled: ThemePalette | ThemePaletteCustom = 'disabled';
 }
